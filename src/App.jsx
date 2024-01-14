@@ -7,7 +7,7 @@ import Tes from "./Tes";
 const App = () => {
   return (
     <>
-      <BrowserRouter basename="/form-balabila/">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<FormInput />} />
           <Route path="/tes" element={<Tes />} />
