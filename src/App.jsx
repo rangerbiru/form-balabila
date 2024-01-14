@@ -6,7 +6,7 @@ import FormInput from "./FormInput";
 const App = () => {
   return (
     <>
-      <BrowserRouter basename="/form-bikers/">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<FormInput />} />
         </Routes>
