@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import supabase from "./database/SupaClient";
-import images from "./assets/images.jpg";
+import images from "./assets/images_wallpaper.jpeg";
 import tf from "./assets/tf.png";
 import ImageUpload from "./components/ImageUpload";
 import jersey from "./assets/jersey.jpg";
@@ -216,7 +216,7 @@ const FormInput = () => {
                     PILIH SALAH SATU KELASMU RIDERS!!{" "}
                     <span className="text-red-600">*</span>
                   </h2>
-                  <div className="flex flex-col w-96 border-2 max-xl:w-full">
+                  <div className="flex flex-col border-2 w-full">
                     {races.map((race) => (
                       <label
                         key={race.id}
@@ -259,7 +259,7 @@ const FormInput = () => {
                     </label>
                     <input
                       type="text"
-                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 "
                       id="name"
                       value={name}
                       required
@@ -277,7 +277,7 @@ const FormInput = () => {
                       type="number"
                       value={telepon}
                       onChange={(e) => setTelepon(e.target.value)}
-                      className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                      className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 "
                     />
                   </div>
                 </div>
@@ -291,7 +291,7 @@ const FormInput = () => {
                       type="text"
                       value={platSepeda}
                       onChange={(e) => setPlatSepeda(e.target.value)}
-                      className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                      className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 "
                     />
                   </div>
                 </div>
@@ -309,7 +309,7 @@ const FormInput = () => {
                       type="text"
                       value={ukuranJersey}
                       onChange={(e) => setUkuraJersey(e.target.value)}
-                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 "
                     />
                   </div>
                 </div>
@@ -324,7 +324,7 @@ const FormInput = () => {
                       type="text"
                       value={asal}
                       onChange={(e) => setAsal(e.target.value)}
-                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                      className="border-0 outline-none p-3 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 "
                     />
                   </div>
                 </div>
@@ -347,7 +347,7 @@ const FormInput = () => {
                   <>
                     <button
                       type="submit"
-                      className="py-2 px-4 border bg-green-600 text-white"
+                      className="py-3 border bg-green-600 text-white mt-5 w-full rounded-md"
                     >
                       Daftar
                     </button>
